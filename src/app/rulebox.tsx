@@ -1,7 +1,5 @@
 "use client"
 import { saveAs } from 'file-saver';
-// import * as yaml from 'js-yaml';
-// import * as fs from 'fs';
 import React, { useState, ChangeEvent } from 'react';
 
 interface TextEditorProps {
@@ -39,18 +37,6 @@ const TextEditor: React.FC<TextEditorProps> = ({ onSubmit }) => {
         }
       };
 
-    // Function to save form value to Yaml file
-    // async function saveToYAMLFile(content: string){
-    //     try {
-    //         const yamlContent = content.trim();
-    //         const blob = new Blob([yamlContent], { type: 'text/yaml;charset=utf-8' });
-    //         saveAs(blob, "output.yml");
-
-    //     }
-    //     catch (error) {
-    //         console.error('Error Saving File in Yaml Format', error);
-    //     }
-    // }
 
     return (
         <div>

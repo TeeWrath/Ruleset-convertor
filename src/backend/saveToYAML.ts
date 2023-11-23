@@ -8,7 +8,7 @@ const api = (req: NextApiRequest, res: NextApiResponse) => {
 
     try {
       // Assuming 'output.yml' is in the root of your project
-      const filePath = '/sigma_test_repo/rules/output.yml';
+      const filePath = '../src/app/output.yml';
       fs.writeFileSync(filePath, content, 'utf8');
       res.status(200).json({ success: true });
     } catch (error) {
